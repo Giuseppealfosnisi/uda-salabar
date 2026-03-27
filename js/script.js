@@ -16,11 +16,11 @@ if (navToggle && navMenu) {
 
 
 
-// === SLOT MACHINE COUNTER (STABILE) ===
+// === SLOT MACHINE COUNTER (VERSIONE FINALE) ===
 function slotCounter(el, target) {
   let value = 0;
-  let velocity = target / 8;   // velocità iniziale
-  let slowdown = 0.92;         // rallentamento progressivo
+  let velocity = target / 8;
+  let slowdown = 0.92;
   let started = false;
 
   function update() {
@@ -46,31 +46,38 @@ function slotCounter(el, target) {
 
 
 
-// === ATTIVA IL COUNTER QUANDO L'HERO ENTRA IN VIEW ===
+// === AVVIO AUTOMATICO DEI NUMERI (ANCHE SENZA HERO) ===
 document.addEventListener("DOMContentLoaded", () => {
-  const hero = document.querySelector(".hero");
-  if (!hero) return;
-
   const counters = [];
   document.querySelectorAll(".stat span").forEach(el => {
     const target = parseInt(el.dataset.target);
     if (!isNaN(target)) counters.push(slotCounter(el, target));
   });
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        counters.forEach(start => start());
-      }
-    });
-  }, { threshold: 0.4 });
+  // Se l’hero è visibile → parte quando entra in view
+  const hero = document.querySelector(".hero");
 
-  observer.observe(hero);
+  if (hero) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          counters.forEach(start => start());
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(hero);
+  }
+
+  // Se l’utente NON vede l’hero (es. entra su #evento) → parte subito
+  if (window.location.hash && window.location.hash !== "#home") {
+    counters.forEach(start => start());
+  }
 });
 
 
 
-// === REVEAL ON SCROLL ===
+// === REVEAL ON SCROLL (VERSIONE MIGLIORATA) ===
 const revealElements = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
