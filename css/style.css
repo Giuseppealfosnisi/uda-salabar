@@ -69,6 +69,7 @@ body {
   text-decoration: none;
   color: var(--dark);
   font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
 .nav-menu a:hover {
@@ -103,9 +104,10 @@ body {
 .hero {
   position: relative;
   min-height: 80vh;
-  background-image: url("https://fai-platform.imgix.net/media/piemonte/no/41396_terre-d-acqua-del-novarese.jpg?crop=fit&w=1440&h=800&auto=format,compress");
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -155,13 +157,18 @@ body {
   gap: 0.75rem;
 }
 
+/* BUTTONS + HOVER ANIMATIONS */
+
 .btn {
+  position: relative;
   display: inline-block;
   padding: 0.6rem 1.3rem;
   border-radius: 999px;
   font-size: 0.95rem;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+  overflow: hidden;
 }
 
 .btn-primary {
@@ -172,6 +179,27 @@ body {
 .btn-outline {
   border: 1px solid #fff;
   color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.25);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::after {
+  left: 150%;
 }
 
 .hero-stats {
@@ -224,6 +252,19 @@ body {
 .section-subtitle {
   margin: 0.3rem 0 1.5rem;
   color: #555;
+}
+
+/* REVEAL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* TERRITORIO */
@@ -299,6 +340,7 @@ body {
   border-radius: 12px;
   padding: 1rem;
   border: 1px solid var(--border-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .prodotto-card img {
@@ -316,6 +358,11 @@ body {
   font-size: 0.85rem;
   color: #666;
   margin-bottom: 0.6rem;
+}
+
+.prodotto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* EVENTO */
@@ -377,6 +424,7 @@ body {
   border-radius: 12px;
   padding: 1.2rem;
   border: 1px solid var(--border-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .dove-box h3 {
@@ -386,6 +434,11 @@ body {
 .dove-box ul {
   padding-left: 1.1rem;
   margin: 0.5rem 0 0;
+}
+
+.dove-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .distretto-box {
@@ -417,6 +470,12 @@ body {
   border-radius: 12px;
   padding: 1.1rem;
   border: 1px solid var(--border-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.evento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .link-btn {
@@ -536,6 +595,7 @@ body {
 
   .hero {
     min-height: 70vh;
+    background-attachment: scroll;
   }
 
   .hero-stats {
@@ -547,4 +607,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
