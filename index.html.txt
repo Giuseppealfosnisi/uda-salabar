@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novara in Tavola — Radici, Sapori e Futuro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">🌾 <span>Novara in Tavola</span></a>
+
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#territorio">Il Territorio</a></li>
+        <li><a href="#prodotti">I Prodotti</a></li>
+        <li><a href="#evento">L’Evento</a></li>
+        <li><a href="#dove-comprare">Dove Comprare</a></li>
+        <li><a href="#progetto">Il Progetto</a></li>
+        <li><a href="#contatti" class="nav-cta">Contattaci</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">TERRITORIO • TRADIZIONE • ECCELLENZA</p>
+      <h1>Novara <span>in Tavola</span></h1>
+      <p class="hero-subtitle">Radici, Sapori e Futuro</p>
+      <p class="hero-desc">Un viaggio tra le eccellenze gastronomiche del territorio novarese</p>
+
+      <div class="hero-buttons">
+        <a href="#prodotti" class="btn btn-primary">Scopri i Sapori</a>
+        <a href="#evento" class="btn btn-outline">L’Evento</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span>500+</span>
+          <p>Produttori di Riso</p>
+        </div>
+        <div class="stat">
+          <span>31.000</span>
+          <p>Ettari Coltivati</p>
+        </div>
+        <div class="stat">
+          <span>45%</span>
+          <p>Prod. Gorgonzola DOP</p>
+        </div>
+      </div>
+
+      <p class="hero-scroll">SCORRI</p>
+    </div>
+  </header>
+
+  <!-- IL TERRITORIO -->
+  <section id="territorio" class="section territorio">
+    <div class="container territorio-grid">
+      <div class="territorio-text">
+        <h2>Il Territorio</h2>
+        <p class="section-subtitle">Un patrimonio naturale e gastronomico senza eguali</p>
+
+        <h3>Tra Pianura e Colline Prealpine</h3>
+        <p>
+          La provincia di Novara si estende tra la pianura padana e le dolci colline prealpine,
+          custodendo un patrimonio gastronomico unico al mondo. Oltre <strong>500 produttori di riso,
+          31.000 ettari coltivati</strong>, formaggi DOP e vini DOCG raccontano una terra plasmata da
+          tradizioni millenarie.
+        </p>
+        <p>
+          Dalla primavera all’autunno, le risaie del basso novarese offrono uno spettacolo visivo
+          straordinario: il cosiddetto <em>“mare a quadretti”</em>, dove la pianura si trasforma in uno
+          specchio d’acqua infinito che riflette il cielo.
+        </p>
+        <p>
+          Il territorio fa parte del <strong>Distretto del Cibo “Novara e Laghi”</strong>, riconosciuto
+          ufficialmente dalla Regione Piemonte nel <strong>2025</strong>, che mira alla valorizzazione e
+          promozione delle eccellenze locali a livello nazionale e internazionale.
+        </p>
+
+        <div class="tag-list">
+          <span>Risoicoltura</span>
+          <span>Gorgonzola DOP</span>
+          <span>Vini DOCG</span>
+          <span>Slow Food</span>
+          <span>Paesaggio UNESCO</span>
+        </div>
+      </div>
+
+      <div class="territorio-side">
+        <div class="territorio-image">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80" alt="Risaie del Novarese">
+          <p class="img-caption">Le risaie del Novarese — il “mare a quadretti”.</p>
+        </div>
+
+        <div class="territorio-stats">
+          <div class="info-box">
+            <span class="info-number">15%</span>
+            <p>della produzione nazionale di riso (IT)</p>
+          </div>
+          <div class="info-box">
+            <span class="info-number">1° in Europa</span>
+            <p>Distretto risicolo Pavia–Vercelli–Novara</p>
+          </div>
+          <div class="info-box">
+            <span class="info-number">2025</span>
+            <p>Anno di istituzione Distretto del Cibo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- I PRODOTTI TIPICI -->
+  <section id="prodotti" class="section prodotti">
+    <div class="container">
+      <p class="section-kicker">ECCELLENZE</p>
+      <h2>I Prodotti Tipici</h2>
+      <p class="section-subtitle">
+        Sette tesori del territorio novarese da conoscere, assaporare e valorizzare
+      </p>
+
+      <div class="prodotti-grid">
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?w=800&q=80" alt="Riso Carnaroli di Baraggia">
+          <h3>Riso Carnaroli di Baraggia</h3>
+          <p class="prodotto-sub">Riso di Baraggia Biellese e Vercellese DOP</p>
+          <p>
+            Il riso del riso, coltivato in 21.000 ettari. Il triangolo Pavese–Novarese–Vercellese è il motore
+            di questa storica tradizione agricola e culinaria. Il Carnaroli, nato nel 1945, è il re dei risotti:
+            chicco grande, consistenza compatta e ottime capacità di assorbire i condimenti.
+          </p>
+          <div class="tag-list">
+            <span>Riso Carnaroli</span>
+            <span>Baraggia DOP</span>
+            <span>Riso di Baraggia</span>
+          </div>
+        </article>
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80" alt="Gorgonzola DOP">
+          <h3>Gorgonzola DOP</h3>
+          <p class="prodotto-sub">Formaggio erborinato DOP</p>
+          <p>
+            Il formaggio simbolo di Novara. Novara produce il 45% del Gorgonzola italiano. Nasce dal latte
+            intero di vacca, con DOP dal 1970. Il Gorgonzola dolce e piccante è un prodotto unico, apprezzato
+            in tutto il mondo per la sua cremosità e aroma inconfondibile.
+          </p>
+          <div class="tag-list">
+            <span>Gorgonzola</span>
+            <span>Formaggio DOP</span>
+            <span>Novara</span>
+          </div>
+        </article>
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80" alt="Paniscia Novarese">
+          <h3>Paniscia Novarese</h3>
+          <p class="prodotto-sub">Piatto tipico</p>
+          <p>
+            Il piatto tipico novarese. Riso cotto con fagioli borlotti, verze, carote, sedano, cipolla, vino
+            rosso e salame della duja. La Paniscia è un piatto completo, saporito e autentico, espressione di
+            antichi sapori contadini.
+          </p>
+          <div class="tag-list">
+            <span>Paniscia</span>
+            <span>Piatto tipico</span>
+            <span>Riso</span>
+          </div>
+        </article>
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1608038509085-7bb9d5c0d48b?w=800&q=80" alt="Salame della Duja">
+          <h3>Salame della Duja</h3>
+          <p class="prodotto-sub">Salume tipico</p>
+          <p>
+            Salume novarese realizzato con carne salata di maiale e conservato nella duja, un vaso di terracotta
+            con strutto. Il salame della duja è morbido, saporito e perfetto per accompagnare il pane e il vino.
+          </p>
+          <div class="tag-list">
+            <span>Salame</span>
+            <span>Duja</span>
+            <span>Salume tipico</span>
+          </div>
+        </article>
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&q=80" alt="Cipolla Bionda di Cureggio">
+          <h3>Cipolla Bionda di Cureggio</h3>
+          <p class="prodotto-sub">Prodotto tipico</p>
+          <p>
+            Cipolla bionda della provincia di Novara, coltivata tra Cureggio e Fontaneto d’Agogna. Dal sapore
+            dolce e delicato, è ideale per soffritti e piatti tradizionali.
+          </p>
+          <div class="tag-list">
+            <span>Cipolla</span>
+            <span>Cureggio</span>
+            <span>Prodotto tipico</span>
+          </div>
+        </article>
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&q=80" alt="Biscottini di Novara">
+          <h3>Biscottini di Novara</h3>
+          <p class="prodotto-sub">Dolce tipico</p>
+          <p>
+            Nati nel 1500 nelle botteghe delle monache di clausura, i biscottini di Novara sono leggeri,
+            fragranti e perfetti per accompagnare il tè o il caffè.
+          </p>
+          <div class="tag-list">
+            <span>Biscottini</span>
+            <span>Dolce tipico</span>
+            <span>Novara</span>
+          </div>
+        </article>
+
+        <article class="prodotto-card">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80" alt="Vini delle Colline Novaresi">
+          <h3>Vini delle Colline Novaresi</h3>
+          <p class="prodotto-sub">DOC - DOCG</p>
+          <p>
+            I vini delle colline novaresi sono tra i più rinomati. I vitigni principali sono il Nebbiolo, che
+            dà origine a pregiati rossi e rosati. Le denominazioni includono Colline Novaresi DOC, Boca DOC,
+            Ghemme DOCG e Fara DOC.
+          </p>
+          <div class="tag-list">
+            <span>Vini</span>
+            <span>DOC</span>
+            <span>DOCG</span>
+            <span>Nebbiolo</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- L’EVENTO -->
+  <section id="evento" class="section evento">
+    <div class="container evento-grid">
+      <div class="evento-banner">
+        <h2>Novara in Tavola — Radici e Futuro</h2>
+        <p>
+          Un evento organizzato dall’Istituto Novarese per valorizzare e promuovere i prodotti enogastronomici
+          del territorio. Degustazioni, laboratori, cooking show e tanto altro in una giornata dedicata al gusto.
+        </p>
+        <p class="evento-meta">
+          <strong>Primavera 2026</strong><br>
+          Novara, Piemonte<br>
+          Ingresso libero
+        </p>
+      </div>
+
+      <div class="evento-programma">
+        <h3>Programma della Giornata</h3>
+
+        <div class="programma-blocco">
+          <h4>Mattina — Allestimento Stand</h4>
+          <p>
+            Apertura degli stand con prodotti tipici locali: riso, gorgonzola, salumi, biscotti, vini.
+            Esposizione curata dagli studenti in collaborazione con produttori locali.
+          </p>
+        </div>
+
+        <div class="programma-blocco">
+          <h4>Mezzogiorno — Apertura & Mini-Documentario</h4>
+          <p>
+            Apertura ufficiale e proiezione del mini-documentario “MiRara Quadrata” realizzato dagli studenti
+            sul valore delle radici, nelle antiche botteghe artigiane di Novara.
+          </p>
+        </div>
+
+        <div class="programma-blocco">
+          <h4>Pomeriggio — Laboratorio di Degustazione</h4>
+          <p>
+            Esperienze di abbinamento e degustazione con il Consorzio di Riso 777. Abbinamenti con Gorgonzola
+            DOP e dolci tipici. Spazio comune riservato al confronto tra studenti e invitati.
+          </p>
+        </div>
+
+        <div class="programma-blocco">
+          <h4>Pomeriggio — Cooking Show — La Paniscia</h4>
+          <p>
+            Dimostrazione della Paniscia novarese, il piatto simbolo del territorio. I cuochi e gli studenti
+            dell’Istituto alberghiero mostrano le fasi della preparazione tradizionale.
+          </p>
+        </div>
+
+        <div class="programma-blocco">
+          <h4>Pomeriggio — Mercatino Studentesco</h4>
+          <p>
+            Vendita di piccoli prodotti artigianali, biscotti, braccialetti, decorazioni e prodotti in DOP
+            realizzati dagli studenti. Il ricavato sarà donato a realtà locali per promuovere il territorio
+            di Novara e le sue scuole.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOVE COMPRARE -->
+  <section id="dove-comprare" class="section dove">
+    <div class="container">
+      <p class="section-kicker">ACQUISTA</p>
+      <h2>Dove Comprare</h2>
+      <p class="section-subtitle">
+        Come e dove trovare le eccellenze del territorio novarese
+      </p>
+
+      <div class="dove-grid">
+        <div class="dove-box">
+          <h3>Canali Tradizionali</h3>
+          <ul>
+            <li>Mercati artigianali e sagre locali</li>
+            <li>Negozi specializzati ed enoteche storiche</li>
+            <li>Vendita diretta in azienda agricola</li>
+            <li>Agriturismi ed aziende con ristorazione interna</li>
+            <li>Botteghe artigiane e gastronomiche</li>
+          </ul>
+        </div>
+
+        <div class="dove-box">
+          <h3>Canali Digitali</h3>
+          <ul>
+            <li>E-commerce tematico “Sapori Novaresi”</li>
+            <li>Social media: Instagram, TikTok, YouTube</li>
+            <li>Piattaforme di prenotazione alberghiera mensile</li>
+            <li>Portali dedicati ai prodotti locali, ristoranti ed eventi</li>
+            <li>Piattaforma Distretto del Cibo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="distretto-box">
+        <h3>Distretto del Cibo “Novara e Laghi”</h3>
+        <p>
+          Riconosciuto ufficialmente dalla Regione Piemonte nel 2021, il Distretto del Cibo “Novara e Laghi”
+          è un progetto voluto dalla Provincia di Novara per mettere in rete istituzioni, produttori ed
+          associazioni del territorio. Obiettivo: valorizzare le tipicità locali, dal riso ai formaggi, dai
+          vini alle carni, dalle conserve alle eccellenze dolciarie.
+        </p>
+        <div class="tag-list">
+          <span>Promuovere i prodotti locali</span>
+          <span>Mettere in rete le imprese</span>
+          <span>Sostenere la cultura gastronomica</span>
+          <span>Rafforzare le filiere agricole</span>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Eventi e Fiere del Territorio</h3>
+      <div class="eventi-grid">
+        <article class="evento-card">
+          <h4>Expolice — Riso e Gastronomia</h4>
+          <p>
+            L’evento dedicato al riso e alla gastronomia locale, ospitato nel cuore di Novara presso il
+            Castello di Novara. Degustazioni, laboratori e incontri con produttori.
+          </p>
+          <a class="link-btn">Conosci Expolice</a>
+        </article>
+
+        <article class="evento-card">
+          <h4>Sagre e Fiere Novaresi</h4>
+          <p>
+            Tra le manifestazioni più amate dai locali, le sagre novaresi celebrano i prodotti tipici del
+            territorio con eventi musicali e culturali.
+          </p>
+          <a class="link-btn">Turismo Novara</a>
+        </article>
+
+        <article class="evento-card">
+          <h4>Strada del Riso Piemontese</h4>
+          <p>
+            Percorso enogastronomico tra Novara e Vercelli per scoprire le varietà di riso piemontese e le
+            aziende agricole che le producono.
+          </p>
+          <a class="link-btn">Scopri la Strada del Riso</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- IL PROGETTO UDA -->
+  <section id="progetto" class="section progetto">
+    <div class="container progetto-grid">
+      <div>
+        <h2>Il Progetto UDA</h2>
+        <p class="section-subtitle">
+          Un’Unità di Apprendimento pluridisciplinare per valorizzare il patrimonio locale
+        </p>
+
+        <h3>Cos’è questo progetto?</h3>
+        <p>
+          Questo sito è il prodotto multimediale finale di un’Unità di Apprendimento (UDA) pluridisciplinare
+          realizzata da studenti di un istituto scolastico del territorio novarese. Il progetto nasce dalla
+          volontà di sensibilizzare la comunità sull’importanza delle tipicità produttive locali e sulle
+          opportunità di valorizzazione e commercializzazione del territorio.
+        </p>
+        <p>
+          Gli studenti hanno lavorato in modo interdisciplinare, combinando conoscenze tecniche, creative e
+          comunicative per raccontare il territorio attraverso i suoi sapori.
+        </p>
+
+        <h3>Obiettivi del Progetto</h3>
+        <ul class="bullet-list">
+          <li>Conoscere e documentare le eccellenze del territorio novarese</li>
+          <li>Organizzare un evento di sensibilizzazione pubblica</li>
+          <li>Realizzare un prodotto multimediale professionale</li>
+          <li>Sviluppare strategie di commercializzazione sostenibile</li>
+          <li>Costruire relazioni con produttori e istituzioni locali</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Discipline Coinvolte</h3>
+        <ul class="bullet-list">
+          <li><strong>Italiano:</strong> Testi descrittivi, brochure, storytelling del documentario</li>
+          <li><strong>Storia:</strong> Origine dei prodotti, dal Gorgonzola medievale alla risicoltura moderna</li>
+          <li><strong>Economia Aziendale:</strong> Analisi di mercato, strategia di commercializzazione</li>
+          <li><strong>Informatica:</strong> Sito web, video, campagna social media</li>
+          <li><strong>Arte e Immagine:</strong> Grafica, logo, allestimento mostra</li>
+          <li><strong>Inglese:</strong> Traduzione brochure, schede prodotti, sottotitoli video</li>
+          <li><strong>Scienze degli Alimenti:</strong> Analisi prodotti DOP/IGP/STG, proprietà nutrizionali</li>
+          <li><strong>Educazione Civica:</strong> Sostenibilità, tutela tradizioni, economia locale</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI (semplice ancora) -->
+  <section id="contatti" class="section contatti">
+    <div class="container">
+      <h2>Contattaci</h2>
+      <p class="section-subtitle">
+        Progetto scolastico dimostrativo — i contatti reali possono essere inseriti dall’istituto.
+      </p>
+      <p>
+        Istituto Scolastico Novarese — Piemonte, Italia<br>
+        Progetto “Novara in Tavola — Radici, Sapori e Futuro”.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🌾 Novara in Tavola</h3>
+        <p>
+          Un progetto studentesco per valorizzare e promuovere le eccellenze gastronomiche del territorio
+          novarese. Radici, Sapori e Futuro.
+        </p>
+        <div class="social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-tiktok"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <p class="hashtags">#NovaraInTavola #SaporiDelNovarese</p>
+      </div>
+
+      <div>
+        <h4>Il Sito</h4>
+        <ul>
+          <li><a href="#territorio">Il Territorio</a></li>
+          <li><a href="#prodotti">I Prodotti Tipici</a></li>
+          <li><a href="#evento">L’Evento</a></li>
+          <li><a href="#dove-comprare">Dove Comprare</a></li>
+          <li><a href="#progetto">Il Progetto UDA</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>I Prodotti</h4>
+        <ul>
+          <li><a href="#prodotti">Riso Carnaroli</a></li>
+          <li><a href="#prodotti">Gorgonzola DOP</a></li>
+          <li><a href="#prodotti">Paniscia Novarese</a></li>
+          <li><a href="#prodotti">Salame d’la Duja</a></li>
+          <li><a href="#prodotti">Vini Novaresi</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Link Utili</h4>
+        <ul>
+          <li>Turismo Novara</li>
+          <li>Consorzio Gorgonzola</li>
+          <li>Strada del Riso</li>
+          <li>NovaraToday</li>
+          <li>Visit Piemonte</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 <strong>Novara in Tavola</strong> – Progetto UDA Pluridisciplinare</p>
+      <p>Istituto Scolastico Novarese – Piemonte, Italia</p>
+      <p>Sito realizzato dagli studenti nell’ambito dell’UDA “I Sapori del Novarese: dal Campo al Mercato”</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
