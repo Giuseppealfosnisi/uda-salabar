@@ -1,3 +1,6 @@
+/* ===========================
+   VARIABILI GLOBALI
+=========================== */
 :root {
   --bg: #f7f1e8;
   --bg-alt: #f0e4d2;
@@ -9,6 +12,9 @@
   --border-soft: #e0d4c2;
 }
 
+/* ===========================
+   RESET
+=========================== */
 *,
 *::before,
 *::after {
@@ -17,14 +23,30 @@
 
 body {
   margin: 0;
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Lato", sans-serif;
   background: var(--bg);
   color: var(--dark);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* ===========================
+   SCROLL PROGRESS BAR
+=========================== */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--accent);
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
 
+/* ===========================
+   NAVBAR
+=========================== */
 .navbar {
   position: sticky;
   top: 0;
@@ -69,11 +91,24 @@ body {
   text-decoration: none;
   color: var(--dark);
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.nav-menu a:hover {
-  color: var(--accent);
+/* underline animato */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
 }
 
 .nav-cta {
@@ -82,8 +117,7 @@ body {
   border: 1px solid var(--accent);
 }
 
-/* Mobile nav */
-
+/* mobile */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -99,11 +133,12 @@ body {
   background: var(--dark);
 }
 
-/* HERO */
-
+/* ===========================
+   HERO
+=========================== */
 .hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 85vh;
   background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80");
   background-size: cover;
   background-position: center;
@@ -114,7 +149,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(120deg, rgba(0,0,0,0.6), rgba(0,0,0,0.25));
 }
 
 .hero-content {
@@ -157,8 +192,9 @@ body {
   gap: 0.75rem;
 }
 
-/* BUTTONS + HOVER ANIMATIONS */
-
+/* ===========================
+   BUTTONS
+=========================== */
 .btn {
   position: relative;
   display: inline-block;
@@ -167,7 +203,7 @@ body {
   font-size: 0.95rem;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
 }
 
@@ -202,6 +238,9 @@ body {
   left: 150%;
 }
 
+/* ===========================
+   HERO STATS
+=========================== */
 .hero-stats {
   display: flex;
   gap: 1.5rem;
@@ -210,7 +249,7 @@ body {
 
 .stat span {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -219,14 +258,9 @@ body {
   font-size: 0.85rem;
 }
 
-.hero-scroll {
-  margin-top: 2.5rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-}
-
-/* SECTIONS */
-
+/* ===========================
+   SECTIONS
+=========================== */
 .section {
   padding: 4rem 1.25rem;
 }
@@ -254,12 +288,13 @@ body {
   color: #555;
 }
 
-/* REVEAL ANIMATION */
-
+/* ===========================
+   REVEAL ANIMATION
+=========================== */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.visible {
@@ -267,12 +302,9 @@ body {
   transform: translateY(0);
 }
 
-/* TERRITORIO */
-
-.territorio {
-  background: var(--bg);
-}
-
+/* ===========================
+   TERRITORIO
+=========================== */
 .territorio-grid {
   display: grid;
   gap: 2rem;
@@ -322,8 +354,9 @@ body {
   font-weight: 700;
 }
 
-/* PRODOTTI */
-
+/* ===========================
+   PRODOTTI
+=========================== */
 .prodotti {
   background: #f3ebdd;
 }
@@ -349,28 +382,14 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.prodotto-card h3 {
-  margin: 0.2rem 0;
-  font-family: "Playfair Display", serif;
-}
-
-.prodotto-sub {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 0.6rem;
-}
-
 .prodotto-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* EVENTO */
-
-.evento {
-  background: var(--bg);
-}
-
+/* ===========================
+   EVENTO
+=========================== */
 .evento-grid {
   display: grid;
   gap: 2rem;
@@ -384,30 +403,13 @@ body {
   border-radius: 12px;
 }
 
-.evento-banner h2 {
-  margin-top: 0;
-}
-
-.evento-meta {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-}
-
-.evento-programma h3 {
-  margin-top: 0;
-}
-
 .programma-blocco {
   margin-bottom: 1rem;
 }
 
-.programma-blocco h4 {
-  margin: 0 0 0.25rem;
-  font-size: 1rem;
-}
-
-/* DOVE COMPRARE */
-
+/* ===========================
+   DOVE COMPRARE
+=========================== */
 .dove {
   background: #f3ebdd;
 }
@@ -427,22 +429,14 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.dove-box h3 {
-  margin-top: 0;
-}
-
-.dove-box ul {
-  padding-left: 1.1rem;
-  margin: 0.5rem 0 0;
-}
-
 .dove-box:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* PROGETTO */
-
+/* ===========================
+   PROGETTO UDA
+=========================== */
 .progetto {
   background: #1f1b18;
   color: #f7f1e8;
@@ -454,22 +448,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.progetto .section-subtitle {
-  color: #e0d4c2;
-}
-
 .bullet-list {
   padding-left: 1.1rem;
 }
 
-/* CONTATTI */
-
-.contatti {
-  background: var(--bg);
-}
-
-/* FOOTER */
-
+/* ===========================
+   FOOTER
+=========================== */
 .footer {
   background: #14110f;
   color: #f7f1e8;
@@ -484,40 +469,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.footer h3,
-.footer h4 {
-  margin-top: 0;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0.4rem 0 0;
-}
-
 .footer a {
   color: #f7f1e8;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .footer a:hover {
   text-decoration: underline;
-}
-
-.social {
-  display: flex;
-  gap: 0.6rem;
-  margin-top: 0.5rem;
-}
-
-.social i {
-  font-size: 1.1rem;
-}
-
-.hashtags {
-  font-size: 0.8rem;
-  margin-top: 0.4rem;
 }
 
 .footer-bottom {
@@ -527,8 +485,9 @@ body {
   text-align: center;
 }
 
-/* RESPONSIVE */
-
+/* ===========================
+   RESPONSIVE
+=========================== */
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
