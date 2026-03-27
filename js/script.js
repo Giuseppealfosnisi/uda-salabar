@@ -16,10 +16,11 @@ if (navToggle && navMenu) {
 
 
 
-// === SLOT MACHINE COUNTER (FIXATO) ===
-function slotCounter(el, target, speed = 20, slowdown = 0.95) {
+// === SLOT MACHINE COUNTER (VERSIONE STABILE) ===
+function slotCounter(el, target) {
   let value = 0;
-  let velocity = target / 10;
+  let velocity = target / 8;   // velocità iniziale
+  let slowdown = 0.92;         // rallentamento progressivo
   let started = false;
 
   function update() {
@@ -48,11 +49,12 @@ function slotCounter(el, target, speed = 20, slowdown = 0.95) {
 // === ATTIVA IL COUNTER QUANDO L'HERO ENTRA IN VIEW ===
 document.addEventListener("DOMContentLoaded", () => {
   const hero = document.querySelector(".hero");
-  const counters = [];
+  if (!hero) return;
 
+  const counters = [];
   document.querySelectorAll(".stat span").forEach(el => {
     const target = parseInt(el.dataset.target);
-    counters.push(slotCounter(el, target));
+    if (!isNaN(target)) counters.push(slotCounter(el, target));
   });
 
   const observer = new IntersectionObserver(entries => {
@@ -61,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         counters.forEach(start => start());
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.4 });
 
   observer.observe(hero);
 });
@@ -74,7 +76,7 @@ const revealElements = document.querySelectorAll(".reveal");
 function revealOnScroll() {
   revealElements.forEach(el => {
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
+    if (rect.top < window.innerHeight - 80) {
       el.classList.add("visible");
     }
   });
