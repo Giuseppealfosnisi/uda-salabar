@@ -14,7 +14,9 @@ if (navToggle && navMenu) {
   });
 }
 
-// === SLOT MACHINE COUNTER ===
+
+
+// === SLOT MACHINE COUNTER (FIXATO) ===
 function slotCounter(el, target, speed = 20, slowdown = 0.95) {
   let value = 0;
   let velocity = target / 10;
@@ -41,6 +43,8 @@ function slotCounter(el, target, speed = 20, slowdown = 0.95) {
   };
 }
 
+
+
 // === ATTIVA IL COUNTER QUANDO L'HERO ENTRA IN VIEW ===
 document.addEventListener("DOMContentLoaded", () => {
   const hero = document.querySelector(".hero");
@@ -61,6 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(hero);
 });
+
+
+
 // === REVEAL ON SCROLL ===
 const revealElements = document.querySelectorAll(".reveal");
 
