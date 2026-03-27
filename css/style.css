@@ -103,7 +103,7 @@ body {
 .hero {
   position: relative;
   min-height: 80vh;
-  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80");
+  background-image: url("https://fai-platform.imgix.net/media/piemonte/no/41396_terre-d-acqua-del-novarese.jpg?crop=fit&w=1440&h=800&auto=format,compress");
   background-size: cover;
   background-position: center;
   color: #fff;
