@@ -3,10 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novara in Tavola</title>
+    <title>Novara in Tavola — Radici, Sapori e Futuro</title>
+
+    <!-- Font & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <!-- Stile locale -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Sito in costruzione</h1>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                🌾 <span>Novara in Tavola</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#territorio">Il Territorio</a></li>
+                <li><a href="#prodotti">I Prodotti</a></li>
+                <li><a href="#evento">L'Evento</a></li>
+                <li><a href="#dove-comprare">Dove Comprare</a></li>
+                <li><a href="#progetto">Il Progetto</a></li>
+                <li><a href="#contatti" class="nav-cta">Contattaci</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🌿 Territorio · Tradizione · Eccellenza</div>
+            <h1>Novara <span>in Tavola</span></h1>
+            <p class="hero-subtitle">Radici, Sapori e Futuro</p>
+            <p class="hero-desc">Un viaggio tra le eccellenze gastronomiche del territorio novarese</p>
+
+            <div class="hero-buttons">
+                <a href="#prodotti" class="btn btn-primary">🍽️ Scopri i Sapori</a>
+                <a href="#evento" class="btn btn-outline">📅 L'Evento</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TERRITORIO -->
+    <section id="territorio" class="section">
+        <div class="container">
+            <h2 class="section-title">Il Territorio</h2>
+            <p class="section-subtitle">Un patrimonio naturale e gastronomico senza eguali</p>
+
+            <div class="territorio-grid">
+                <div class="territorio-text">
+                    <h3>Tra Pianura e Colline Prealpine</h3>
+                    <p>La provincia di Novara si estende tra la pianura padana e le dolci colline prealpine...</p>
+                </div>
+
+                <div class="territorio-image">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80" alt="Risaie del Novarese">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODOTTI -->
+    <section id="prodotti" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title light">I Prodotti Tipici</h2>
+            <p class="section-subtitle light">Sette tesori del territorio novarese</p>
+
+            <div class="prodotti-grid">
+
+                <!-- Esempio card -->
+                <div class="prodotto-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?w=800&q=80" alt="Riso Carnaroli">
+                        <div class="card-badge">DOP</div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Riso Carnaroli & Razza 77</h3>
+                        <p>Il Re dei risi, coltivato in 31.000 ettari...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTO -->
+    <section id="evento" class="section">
+        <div class="container">
+            <h2 class="section-title">L'Evento</h2>
+            <p class="section-subtitle">Una giornata per celebrare le eccellenze novaresi</p>
+
+            <div class="evento-hero">
+                <div class="evento-text">
+                    <h3>"Novara in Tavola — Radici e Futuro"</h3>
+                    <p>Un evento organizzato dagli studenti...</p>
+                </div>
+
+                <div class="evento-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Novara in Tavola — Progetto Studentesco</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
