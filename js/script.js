@@ -16,7 +16,7 @@ if (navToggle && navMenu) {
 
 
 
-// === SLOT MACHINE COUNTER (VERSIONE FINALE) ===
+// === SLOT MACHINE COUNTER ===
 function slotCounter(el, target) {
   let value = 0;
   let velocity = target / 8;
@@ -46,7 +46,7 @@ function slotCounter(el, target) {
 
 
 
-// === AVVIO AUTOMATICO DEI NUMERI (ANCHE SENZA HERO) ===
+// === AVVIO AUTOMATICO DEI NUMERI ===
 document.addEventListener("DOMContentLoaded", () => {
   const counters = [];
   document.querySelectorAll(".stat span").forEach(el => {
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isNaN(target)) counters.push(slotCounter(el, target));
   });
 
-  // Se l’hero è visibile → parte quando entra in view
   const hero = document.querySelector(".hero");
 
+  // Se l'hero esiste → parte quando entra in vista
   if (hero) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(hero);
   }
 
-  // Se l’utente NON vede l’hero (es. entra su #evento) → parte subito
+  // Se l'utente entra in una sezione diversa dall'hero → parte subito
   if (window.location.hash && window.location.hash !== "#home") {
     counters.forEach(start => start());
   }
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// === REVEAL ON SCROLL (VERSIONE MIGLIORATA) ===
+// === REVEAL ON SCROLL ===
 const revealElements = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
