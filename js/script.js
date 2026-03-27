@@ -16,7 +16,7 @@ if (navToggle && navMenu) {
 
 
 
-// === SLOT MACHINE COUNTER (VERSIONE STABILE) ===
+// === SLOT MACHINE COUNTER (STABILE) ===
 function slotCounter(el, target) {
   let value = 0;
   let velocity = target / 8;   // velocità iniziale
