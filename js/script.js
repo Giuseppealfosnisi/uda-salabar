@@ -18,6 +18,7 @@ if (navToggle && navMenu) {
 function slotCounter(el, target, speed = 20, slowdown = 0.95) {
   let value = 0;
   let velocity = target / 10;
+  let started = false;
 
   function update() {
     value += velocity;
@@ -32,16 +33,34 @@ function slotCounter(el, target, speed = 20, slowdown = 0.95) {
     requestAnimationFrame(update);
   }
 
-  update();
+  return () => {
+    if (!started) {
+      started = true;
+      update();
+    }
+  };
 }
 
+// === ATTIVA IL COUNTER QUANDO L'HERO ENTRA IN VIEW ===
 document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector(".hero");
+  const counters = [];
+
   document.querySelectorAll(".stat span").forEach(el => {
     const target = parseInt(el.dataset.target);
-    if (!isNaN(target)) slotCounter(el, target);
+    counters.push(slotCounter(el, target));
   });
-});
 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counters.forEach(start => start());
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(hero);
+});
 // === REVEAL ON SCROLL ===
 const revealElements = document.querySelectorAll(".reveal");
 
