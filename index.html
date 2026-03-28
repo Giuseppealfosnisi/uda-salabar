@@ -25,9 +25,9 @@
 
 ```
 <ul class="nav-menu">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#prodotti">Prodotti</a></li>
+  <li><a href="#hero">Home</a></li>
   <li><a href="#territorio">Territorio</a></li>
+  <li><a href="#prodotti">Prodotti</a></li>
   <li><a href="#evento">Evento</a></li>
 </ul>
 ```
@@ -37,8 +37,8 @@
 
 <!-- HERO -->
 
-<section id="home" class="hero">
-  <div class="hero-overlay"></div>
+<section id="hero" class="hero">
+  <div class="overlay"></div>
 
   <div class="hero-content">
     <h1>Novara <span>in Tavola</span></h1>
@@ -47,57 +47,69 @@
   </div>
 </section>
 
+<!-- TERRITORIO -->
+
+<section id="territorio" class="section territorio">
+  <div class="container">
+    <h2>Il Territorio</h2>
+    <p>
+      Le risaie novaresi rappresentano una delle eccellenze agricole del Piemonte,
+      un paesaggio unico tra natura, acqua e tradizione.
+    </p>
+  </div>
+</section>
+
 <!-- PRODOTTI -->
 
-<section id="prodotti" class="section">
-  <h2>I Prodotti Tipici</h2>
-
-  <div class="grid">
+<section id="prodotti" class="section prodotti">
+  <div class="container">
+    <h2>I Prodotti Tipici</h2>
 
 ```
-<div class="card">
-  <img src="img/paniscia.jpg">
-  <h3>Paniscia Novarese</h3>
-  <p>Piatto tipico a base di riso.</p>
-</div>
+<div class="grid">
 
-<div class="card">
-  <img src="img/gorgonzola.jpg">
-  <h3>Gorgonzola DOP</h3>
-  <p>Formaggio famoso nel mondo.</p>
-</div>
+  <div class="card">
+    <h3>Paniscia</h3>
+    <p>Piatto tipico a base di riso.</p>
+  </div>
 
-<div class="card">
-  <img src="img/biscotti.jpg">
-  <h3>Biscotti di Novara</h3>
-  <p>Dolce tradizionale.</p>
-</div>
+  <div class="card">
+    <h3>Gorgonzola</h3>
+    <p>Formaggio famoso nel mondo.</p>
+  </div>
 
-<div class="card">
-  <img src="img/carne.jpg">
-  <h3>Carni Piemontesi</h3>
-  <p>Tradizione gastronomica locale.</p>
+  <div class="card">
+    <h3>Biscotti</h3>
+    <p>Dolce tradizionale locale.</p>
+  </div>
+
+  <div class="card">
+    <h3>Carni</h3>
+    <p>Tradizione piemontese.</p>
+  </div>
+
 </div>
 ```
 
   </div>
 </section>
 
-<!-- TERRITORIO -->
-
-<section id="territorio" class="section light">
-  <h2>Il Territorio</h2>
-  <p>Le risaie novaresi rappresentano una delle eccellenze agricole del Piemonte.</p>
-</section>
-
 <!-- EVENTO -->
 
-<section id="evento" class="section">
-  <h2>L'Evento</h2>
-  <p>Un viaggio tra gusto, tradizione e innovazione.</p>
+<section id="evento" class="section evento">
+  <div class="container">
+    <h2>L'Evento</h2>
+    <p>
+      Un'esperienza tra gusto, tradizione e innovazione culinaria.
+    </p>
+  </div>
 </section>
 
-<!-- JS -->
+<!-- FOOTER -->
+
+<footer class="footer">
+  <p>© 2026 Novara in Tavola</p>
+</footer>
 
 <script src="js/main.js"></script>
 
