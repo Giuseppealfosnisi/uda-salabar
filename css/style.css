@@ -1,184 +1,137 @@
-:root {
---verde: #1e3d2b;
---verde-scuro: #14281d;
---oro: #d4a017;
---bianco: #ffffff;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
 body {
-font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: #0b1d16;
 }
 
-/* NAVBAR */
-.navbar {
-position: absolute;
-width: 100%;
-padding: 20px 60px;
-z-index: 1000;
-}
-
-.nav-container {
-max-width: 1200px;
-margin: auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-color: white;
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 }
 
 .logo {
-font-size: 18px;
-font-weight: 600;
+  font-weight: bold;
 }
 
-.nav-menu {
-list-style: none;
-display: flex;
-gap: 25px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
 
-.nav-menu a {
-text-decoration: none;
-color: #ddd;
-font-size: 14px;
-transition: 0.3s;
-}
-
-.nav-menu a:hover {
-color: white;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 .btn-nav {
-background: var(--oro);
-padding: 8px 18px;
-border-radius: 20px;
-color: white;
-text-decoration: none;
-font-size: 14px;
+  background: #d89c2b;
+  padding: 8px 15px;
+  border-radius: 20px;
 }
 
 /* HERO */
 .hero {
-height: 100vh;
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-
-/* PER ORA SENZA IMMAGINE */
-background: linear-gradient(120deg, #0f2a1d, #2d5a3f);
-
-color: white;
-text-align: center;
-overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0b1d16, #1f4d35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
-/* OVERLAY LUCE */
-.hero-overlay {
-position: absolute;
-width: 100%;
-height: 100%;
-background: radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.8));
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.7));
 }
 
-/* CONTENUTO */
 .hero-content {
-position: relative;
-max-width: 800px;
-padding: 20px;
+  position: relative;
+  max-width: 800px;
 }
 
 /* BADGE */
 .badge {
-display: inline-block;
-border: 1px solid rgba(255,255,255,0.3);
-padding: 8px 20px;
-border-radius: 30px;
-font-size: 12px;
-margin-bottom: 25px;
-color: #ddd;
+  border: 1px solid #d89c2b;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
-/* TITOLI */
-.hero h1 {
-font-family: 'Playfair Display', serif;
-font-size: 85px;
-line-height: 1;
+/* TITLE */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 1.1;
 }
 
-.hero span {
-color: var(--oro);
-font-style: italic;
+h1 span {
+  color: #d89c2b;
 }
 
+/* TEXT */
 .subtitle {
-margin-top: 15px;
-font-size: 20px;
-font-style: italic;
-color: #ddd;
+  font-style: italic;
+  margin: 15px 0;
 }
 
-.description {
-margin-top: 15px;
-font-size: 14px;
-color: #ccc;
+.desc {
+  opacity: 0.8;
+  margin-bottom: 30px;
 }
 
-/* BOTTONI */
-.hero-buttons {
-margin-top: 30px;
-display: flex;
-gap: 15px;
-justify-content: center;
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
-.btn-primary {
-background: var(--oro);
-padding: 12px 25px;
-border-radius: 25px;
-text-decoration: none;
-color: white;
-font-size: 14px;
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-.btn-secondary {
-border: 1px solid white;
-padding: 12px 25px;
-border-radius: 25px;
-text-decoration: none;
-color: white;
-font-size: 14px;
+.primary {
+  background: #d89c2b;
+  color: white;
 }
 
-/* STATS BOX */
+.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+/* STATS */
 .stats {
-margin-top: 40px;
-display: flex;
-justify-content: center;
-gap: 40px;
-
-background: rgba(255,255,255,0.05);
-padding: 20px 30px;
-border-radius: 15px;
-backdrop-filter: blur(10px);
-}
-
-.stats div {
-text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .stats h3 {
-color: var(--oro);
-font-size: 22px;
-}
-
-.stats p {
-font-size: 12px;
-color: #ccc;
+  color: #d89c2b;
 }
