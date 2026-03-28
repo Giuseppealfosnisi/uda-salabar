@@ -3,11 +3,12 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Novara in Tavola</title>
 
-  <!-- FONT FIGO -->
+  <!-- FONT -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
 
@@ -18,29 +19,37 @@
 
 <!-- NAVBAR -->
 
-<header>
-  <h2>Novara in Tavola</h2>
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#prodotti">Prodotti</a>
-    <a href="#territorio">Territorio</a>
-    <a href="#evento">Evento</a>
-  </nav>
-</header>
+<nav class="navbar">
+  <div class="nav-container">
+    <h2 class="logo">🌾 Novara in Tavola</h2>
+
+```
+<ul class="nav-menu">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#prodotti">Prodotti</a></li>
+  <li><a href="#territorio">Territorio</a></li>
+  <li><a href="#evento">Evento</a></li>
+</ul>
+```
+
+  </div>
+</nav>
 
 <!-- HERO -->
 
-<section id="hero" class="hero">
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+
   <div class="hero-content">
     <h1>Novara <span>in Tavola</span></h1>
     <p>Radici, Sapori e Futuro</p>
-    <button class="btn">Scopri i Sapori</button>
+    <a href="#prodotti" class="btn">Scopri i Sapori</a>
   </div>
 </section>
 
 <!-- PRODOTTI -->
 
-<section id="prodotti" class="prodotti">
+<section id="prodotti" class="section">
   <h2>I Prodotti Tipici</h2>
 
   <div class="grid">
@@ -49,7 +58,7 @@
 <div class="card">
   <img src="img/paniscia.jpg">
   <h3>Paniscia Novarese</h3>
-  <p>Piatto tradizionale a base di riso.</p>
+  <p>Piatto tipico a base di riso.</p>
 </div>
 
 <div class="card">
@@ -61,13 +70,13 @@
 <div class="card">
   <img src="img/biscotti.jpg">
   <h3>Biscotti di Novara</h3>
-  <p>Dolce tipico locale.</p>
+  <p>Dolce tradizionale.</p>
 </div>
 
 <div class="card">
   <img src="img/carne.jpg">
-  <h3>Tradizione Piemontese</h3>
-  <p>Carni e grigliate tipiche.</p>
+  <h3>Carni Piemontesi</h3>
+  <p>Tradizione gastronomica locale.</p>
 </div>
 ```
 
@@ -76,21 +85,21 @@
 
 <!-- TERRITORIO -->
 
-<section id="territorio" class="territorio">
+<section id="territorio" class="section light">
   <h2>Il Territorio</h2>
-  <p>Le risaie novaresi rappresentano una delle eccellenze del Piemonte.</p>
+  <p>Le risaie novaresi rappresentano una delle eccellenze agricole del Piemonte.</p>
 </section>
 
 <!-- EVENTO -->
 
-<section id="evento" class="evento">
+<section id="evento" class="section">
   <h2>L'Evento</h2>
   <p>Un viaggio tra gusto, tradizione e innovazione.</p>
 </section>
 
 <!-- JS -->
 
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
