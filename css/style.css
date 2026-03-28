@@ -1,137 +1,131 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  color: white;
-  background: #0b1d16;
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
 
-/* HEADER */
-header {
-  position: fixed;
-  width: 100%;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
 }
 
-.logo {
-  font-weight: bold;
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.btn-nav {
-  background: #d89c2b;
-  padding: 8px 15px;
-  border-radius: 20px;
+.btn-contatti {
+    background: #f4a825;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: linear-gradient(to bottom, #0b1d16, #1f4d35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
+    height: 100vh;
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.7));
+    /* METTEREMO DOPO L'IMMAGINE */
+    background: linear-gradient(to bottom, rgba(10,20,10,0.8), rgba(10,20,10,0.9)),
+                url('../images/sfondo.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-content {
-  position: relative;
-  max-width: 800px;
+    max-width: 900px;
 }
 
-/* BADGE */
 .badge {
-  border: 1px solid #d89c2b;
-  display: inline-block;
-  padding: 8px 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
+    border: 1px solid #f4a825;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #f4a825;
 }
 
-/* TITLE */
+/* TITOLI */
 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 70px;
-  line-height: 1.1;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    margin: 20px 0;
 }
 
 h1 span {
-  color: #d89c2b;
+    color: #f4a825;
 }
 
-/* TEXT */
+/* TESTI */
 .subtitle {
-  font-style: italic;
-  margin: 15px 0;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.desc {
-  opacity: 0.8;
-  margin-bottom: 30px;
+.description {
+    color: #ccc;
+    margin-bottom: 30px;
 }
 
-/* BUTTONS */
+/* BOTTONI */
 .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
-.btn {
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
+.btn-primary {
+    background: #f4a825;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
 }
 
-.primary {
-  background: #d89c2b;
-  color: white;
-}
-
-.secondary {
-  border: 1px solid white;
-  color: white;
+.btn-secondary {
+    background: transparent;
+    border: 1px solid white;
+    padding: 14px 26px;
+    border-radius: 30px;
+    color: white;
 }
 
 /* STATS */
 .stats {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .stats h3 {
-  color: #d89c2b;
+    color: #f4a825;
+}
+
+.scroll {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
 }
