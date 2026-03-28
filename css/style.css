@@ -6,7 +6,7 @@
 
 body {
 margin: 0;
-font-family: Arial, sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 /* NAVBAR */
@@ -16,22 +16,28 @@ width: 100%;
 top: 0;
 display: flex;
 justify-content: space-between;
-padding: 20px 40px;
+padding: 20px 50px;
 background: rgba(0,0,0,0.6);
 color: white;
+z-index: 1000;
+}
+
+header h2 {
+font-size: 22px;
 }
 
 header a {
 color: white;
-margin-left: 20px;
+margin-left: 25px;
 text-decoration: none;
+font-weight: bold;
 }
 
 /* HERO */
 .hero {
 height: 100vh;
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('../img/risaie.jpg') center/cover;
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('../img/risaie.jpg') center/cover no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -40,55 +46,86 @@ color: white;
 }
 
 .hero h1 {
-font-size: 70px;
+font-size: 90px;
+margin: 0;
 }
 
 .hero span {
 color: var(--oro);
 }
 
+.hero p {
+font-size: 22px;
+margin-top: 10px;
+}
+
 .btn {
-margin-top: 20px;
-padding: 12px 30px;
+margin-top: 25px;
+padding: 14px 35px;
 border: none;
 border-radius: 30px;
 background: var(--oro);
 color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+/* SEZIONI */
+section {
+padding: 100px 60px;
 }
 
 /* PRODOTTI */
 .prodotti {
-padding: 80px;
 background: var(--beige);
 text-align: center;
 }
 
-.grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-gap: 30px;
+.prodotti h2 {
+font-size: 40px;
+margin-bottom: 50px;
 }
 
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+gap: 40px;
+}
+
+/* CARD */
 .card {
 background: white;
-border-radius: 15px;
+border-radius: 20px;
 overflow: hidden;
-box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 transition: 0.3s;
 }
 
 .card:hover {
-transform: translateY(-10px);
+transform: translateY(-12px);
 }
 
 .card img {
 width: 100%;
-height: 200px;
+height: 220px;
 object-fit: cover;
+}
+
+.card h3 {
+margin: 15px;
+font-size: 20px;
+}
+
+.card p {
+margin: 0 15px 20px;
+color: #555;
 }
 
 /* ALTRE SEZIONI */
 .territorio, .evento {
-padding: 80px;
 text-align: center;
+}
+
+.territorio h2, .evento h2 {
+font-size: 40px;
 }
