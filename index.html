@@ -1,65 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <title>Novara in Tavola</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
+
 <header>
   <h2>Novara in Tavola</h2>
   <nav>
-    <a href="#">Territorio</a>
-    <a href="#">Prodotti</a>
-    <a href="#">Evento</a>
-    <a href="#">Contatti</a>
+    <a href="#hero">Home</a>
+    <a href="#prodotti">Prodotti</a>
+    <a href="#territorio">Territorio</a>
+    <a href="#evento">Evento</a>
   </nav>
 </header>
 
 <!-- HERO -->
-<section class="hero">
+
+<section id="hero" class="hero">
   <div class="hero-content">
     <h1>Novara <span>in Tavola</span></h1>
     <p>Radici, Sapori e Futuro</p>
-    <button>Scopri i Sapori</button>
+    <button class="btn">Scopri i Sapori</button>
   </div>
 </section>
 
 <!-- PRODOTTI -->
-<section class="prodotti">
+
+<section id="prodotti" class="prodotti">
   <h2>I Prodotti Tipici</h2>
 
   <div class="grid">
 
-    <div class="card">
-      <img src="img/paniscia.jpg">
-      <h3>Paniscia Novarese</h3>
-      <p>Piatto tradizionale a base di riso e legumi.</p>
-    </div>
+```
+<div class="card">
+  <img src="img/paniscia.jpg">
+  <h3>Paniscia Novarese</h3>
+  <p>Piatto tradizionale a base di riso.</p>
+</div>
 
-    <div class="card">
-      <img src="img/gorgonzola.jpg">
-      <h3>Gorgonzola DOP</h3>
-      <p>Formaggio tipico famoso in tutto il mondo.</p>
-    </div>
+<div class="card">
+  <img src="img/gorgonzola.jpg">
+  <h3>Gorgonzola DOP</h3>
+  <p>Formaggio famoso nel mondo.</p>
+</div>
 
-    <div class="card">
-      <img src="img/biscotti.jpg">
-      <h3>Biscotti di Novara</h3>
-      <p>Dolce tradizionale locale.</p>
-    </div>
+<div class="card">
+  <img src="img/biscotti.jpg">
+  <h3>Biscotti di Novara</h3>
+  <p>Dolce tipico locale.</p>
+</div>
 
-    <div class="card">
-      <img src="img/carne.jpg">
-      <h3>Carni e Grigliate</h3>
-      <p>Tradizione gastronomica piemontese.</p>
-    </div>
+<div class="card">
+  <img src="img/carne.jpg">
+  <h3>Tradizione Piemontese</h3>
+  <p>Carni e grigliate tipiche.</p>
+</div>
+```
 
   </div>
 </section>
+
+<!-- TERRITORIO -->
+
+<section id="territorio" class="territorio">
+  <h2>Il Territorio</h2>
+  <p>Le risaie novaresi rappresentano una delle eccellenze del Piemonte.</p>
+</section>
+
+<!-- EVENTO -->
+
+<section id="evento" class="evento">
+  <h2>L'Evento</h2>
+  <p>Un viaggio tra gusto, tradizione e innovazione.</p>
+</section>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
