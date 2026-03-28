@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Novara in Tavola</title>
 
+  <!-- CSS -->
+
   <link rel="stylesheet" href="css/style.css">
 
   <!-- FONT -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,34 +20,28 @@
 <!-- NAVBAR -->
 
 <header class="navbar">
-  <div class="nav-left">🌾 Novara in Tavola</div>
+  <div class="logo">🌾 Novara in Tavola</div>
 
-  <nav class="nav-center">
-    <a href="#">Il Territorio</a>
-    <a href="#">I Prodotti</a>
-    <a href="#">L'Evento</a>
-    <a href="#">Dove Comprare</a>
-    <a href="#">Il Progetto</a>
+  <nav>
+    <a href="#territorio">Il Territorio</a>
+    <a href="#prodotti">I Prodotti</a>
+    <a href="#evento">L'Evento</a>
+    <a href="#progetto">Il Progetto</a>
   </nav>
 
-  <div class="nav-right">
-    <a href="#" class="btn-nav">Contattaci</a>
-  </div>
+<a href="#" class="btn-nav">Contattaci</a>
+
 </header>
 
 <!-- HERO -->
 
 <section class="hero">
-
   <div class="overlay"></div>
 
   <div class="hero-content">
+    <div class="badge">🌿 TERRITORIO • TRADIZIONE • ECCELLENZA</div>
 
 ```
-<div class="badge">
-  🌿 TERRITORIO • TRADIZIONE • ECCELLENZA
-</div>
-
 <h1>
   Novara <br>
   <span>in Tavola</span>
@@ -58,35 +54,64 @@
 </p>
 
 <div class="buttons">
-  <a href="#" class="btn primary">Scopri i Sapori</a>
-  <a href="#" class="btn secondary">L'Evento</a>
+  <a href="#prodotti" class="btn primary">Scopri i Sapori</a>
+  <a href="#evento" class="btn secondary">L'Evento</a>
 </div>
 
 <div class="stats">
-  <div>
-    <h3>500+</h3>
-    <p>Produttori di Riso</p>
-  </div>
-
-  <div>
-    <h3>31.000</h3>
-    <p>Ettari Coltivati</p>
-  </div>
-
-  <div>
-    <h3>45%</h3>
-    <p>Prod. Gorgonzola DOP</p>
-  </div>
+  <div><h3>500+</h3><p>Produttori di Riso</p></div>
+  <div><h3>31.000</h3><p>Ettari Coltivati</p></div>
+  <div><h3>45%</h3><p>Prod. Gorgonzola DOP</p></div>
 </div>
 ```
 
   </div>
-
 </section>
 
-<!-- SEZIONE VUOTA (COME TEMPLATE) -->
+<!-- TERRITORIO -->
 
-<section class="spacer"></section>
+<section id="territorio" class="section light">
+  <div class="container">
+    <h2>Il Territorio</h2>
+    <p>
+      Le risaie novaresi rappresentano un patrimonio agricolo unico,
+      simbolo di tradizione e innovazione.
+    </p>
+  </div>
+</section>
+
+<!-- PRODOTTI -->
+
+<section id="prodotti" class="section dark">
+  <div class="container">
+    <h2>I Prodotti Tipici</h2>
+
+```
+<div class="grid">
+  <div class="card"><h3>Paniscia</h3></div>
+  <div class="card"><h3>Gorgonzola</h3></div>
+  <div class="card"><h3>Biscotti</h3></div>
+  <div class="card"><h3>Carni</h3></div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- EVENTO -->
+
+<section id="evento" class="section light">
+  <div class="container">
+    <h2>L'Evento</h2>
+    <p>Un'esperienza tra tradizione, gusto e innovazione.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <p>© 2026 Novara in Tavola</p>
+</footer>
 
 <script src="js/script.js"></script>
 
