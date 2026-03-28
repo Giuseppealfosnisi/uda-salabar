@@ -1,68 +1,101 @@
-/* EVENTO */
-.evento {
-  padding: 100px 20px;
-  background: #f7f5ef;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Inter', sans-serif;
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
+/* NAVBAR */
+.navbar {
+position: fixed;
+width: 100%;
+top: 0;
+padding: 20px 60px;
+display: flex;
+justify-content: space-between;
+background: rgba(0,0,0,0.7);
+color: white;
 }
 
-.section-header h2 {
-  font-size: 40px;
-  color: #1f3d2b;
+.navbar nav a {
+margin: 0 10px;
+color: white;
+text-decoration: none;
 }
 
-.section-header p {
-  color: #555;
+.btn-nav {
+background: orange;
+padding: 8px 15px;
+border-radius: 20px;
+color: white;
+}
+
+/* HERO */
+.hero {
+height: 100vh;
+background: linear-gradient(#0b1d16, #1f4d35);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
 }
 
 .badge {
-  background: #d4a72c;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  color: white;
+border: 1px solid orange;
+padding: 5px 10px;
+display: inline-block;
+margin-bottom: 10px;
 }
 
-.evento-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+.hero h1 {
+font-size: 70px;
 }
 
-.evento-text h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
+.hero span {
+color: orange;
 }
 
-.evento-info {
-  margin: 20px 0;
-  list-style: none;
+.buttons {
+margin-top: 20px;
 }
 
-.evento-info li {
-  margin-bottom: 8px;
+.btn {
+padding: 10px 20px;
+margin: 5px;
+border-radius: 20px;
+text-decoration: none;
 }
 
-.evento-card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+.primary {
+background: orange;
+color: white;
 }
 
-.evento-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+.secondary {
+border: 1px solid white;
+color: white;
 }
 
-.btn-primary {
-  background: #d4a72c;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
+/* SEZIONI */
+.section {
+padding: 100px 20px;
+text-align: center;
+}
+
+.light {
+background: #f5f5f5;
+}
+
+.dark {
+background: #0b1d16;
+color: white;
+}
+
+.container {
+max-width: 1000px;
+margin: auto;
 }
